@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Tip Calculator</h1>
+      </div>
+        <form id="form" novalidate>
+          <div class="data">
+            <p>How much was your bill?</p>
+            <input class="fields" type="number" name="amount"  />
+            <p class="error amount">Enter the value !!!</p>
+          </div>
+          <div class="data">
+            <p>How was your service...?</p>
+            <select class="fields" name="service" id="">
+                <option disabled selected value="0">-- Choose an Option --</option>
+                <option value="30">30% - Outstanding</option>
+                <option value="20">20% - Good</option>
+                <option value="15">15% - It was OK</option>
+                <option value="10">10% - Bad</option>
+                <option value="5">5% - Terrible</option>
+            </select>
+            <p class="error service">Select any option!</p>
+          </div>
+          <div class="data">
+            <p>How many people are sharing the bill?</p>
+            <input class="fields" type="number" name="customer"/>
+            <p class="error customer">Enter the no. of people! </p>
+          </div>
+         <button class="btn"><h1>CALCULATE!</h1></button>
+         <div class="answer">
+            <h2>TIP AMOUNT</h2>
+             <h1>$0.00</h1>
+            <h3>each</h3>
+         </div>  
+        </form> 
+        
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
